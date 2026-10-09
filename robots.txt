@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://guches.github.io/John_Guchu_Macharia.github.io/sitemap.xml
