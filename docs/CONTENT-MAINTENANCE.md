@@ -1,5 +1,7 @@
 # Content Maintenance Guide
 
+For normal content updates, use the CMS at `/admin/` and follow [`CMS-USAGE.md`](CMS-USAGE.md). Direct HTML edits remain appropriate for layout, accessibility, and design-system changes.
+
 ## Updating headline / positioning
 
 Edit the hero block in `index.html`.

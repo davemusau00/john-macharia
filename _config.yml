@@ -1,0 +1,13 @@
+title: John Guchu Macharia
+description: Programme and operations leadership, digital transformation and customer experience.
+url: https://guches.github.io
+baseurl: /John_Guchu_Macharia.github.io
+markdown: kramdown
+permalink: pretty
+collections:
+  work:
+    output: true
+    permalink: /projects/:name/
+  content:
+    output: false
+exclude: [docs, legacy, vendor, Gemfile, Gemfile.lock]

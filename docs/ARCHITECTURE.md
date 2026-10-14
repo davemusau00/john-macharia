@@ -136,6 +136,10 @@ Future asset recommendations:
 
 ## Security / privacy notes
 
+## CMS publishing layer
+
+Decap CMS stores structured content in `_content/` and uses GitHub pull requests for editorial review. The public site remains static and GitHub Pages-compatible. GitHub OAuth is handled by the Worker template in `infrastructure/oauth-worker`; secrets stay in Worker configuration and are never committed.
+
 The current email and phone details were already public in the source repository. If privacy requirements change, remove or obfuscate them consistently across:
 
 - `about.html`;

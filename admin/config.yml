@@ -1,0 +1,60 @@
+backend:
+  name: github
+  repo: guches/John_Guchu_Macharia.github.io
+  branch: main
+  base_url: https://YOUR-OAUTH-WORKER.workers.dev
+  auth_endpoint: auth
+publish_mode: editorial_workflow
+media_folder: assets/img/uploads
+public_folder: /assets/img/uploads
+site_url: https://guches.github.io/John_Guchu_Macharia.github.io
+display_url: https://guches.github.io/John_Guchu_Macharia.github.io
+collections:
+  - name: pages
+    label: Portfolio pages
+    files:
+      - name: home
+        label: Home
+        file: _data/pages/home.yml
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text}
+          - {label: Hero headline, name: hero_headline, widget: string}
+          - {label: Hero copy, name: hero_copy, widget: text}
+          - label: Metrics
+            name: metrics
+            widget: list
+            fields:
+              - {label: Value, name: value, widget: string}
+              - {label: Label, name: label, widget: string}
+          - {label: Contact CTA, name: contact_cta, widget: text}
+      - name: about
+        label: About
+        file: _data/pages/about.yml
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Introduction, name: introduction, widget: text}
+          - {label: Body, name: body, widget: markdown}
+      - name: resume
+        label: Résumé
+        file: _data/pages/resume.yml
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Summary, name: summary, widget: text}
+          - {label: Roles, name: roles, widget: list}
+  - name: work
+    label: Case studies
+    folder: _work
+    create: true
+    slug: "{{slug}}"
+    identifier_field: slug
+    fields:
+      - {label: Slug, name: slug, widget: string, hint: Keep this stable after publication.}
+      - {label: Title, name: title, widget: string}
+      - {label: Summary, name: summary, widget: text}
+      - {label: Role, name: role, widget: string}
+      - {label: Period, name: period, widget: string}
+      - {label: Sector, name: sector, widget: string}
+      - {label: Themes, name: themes, widget: list}
+      - {label: Body, name: body, widget: markdown}
+      - {label: Featured, name: featured, widget: boolean, default: false}

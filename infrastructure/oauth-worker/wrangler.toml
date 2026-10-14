@@ -1,0 +1,5 @@
+name = "john-guchu-portfolio-cms-auth"
+main = "src/index.js"
+compatibility_date = "2026-10-14"
+[vars]
+GITHUB_CLIENT_ID = "replace-with-github-oauth-client-id"
